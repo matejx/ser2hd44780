@@ -2,7 +2,7 @@
 serial 2 hd44780 lcd using attiny2313
 
 @file		main.c
-@author		Matej Kogovsek (matej@hamradio.si)
+@author		Matej Kogovsek
 @copyright	GPL v2
 */
 

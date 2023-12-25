@@ -14,11 +14,11 @@ TARGET = main
 OBJDIR = .
 
 # libs dir
-LIBDIR = ../lib/mat
+LIBDIR = ../../lib/mat
 
 # List C source files here. (C dependencies are automatically generated.)
-SRC = $(TARGET).c
-SRC += $(LIBDIR)/lcd.c $(LIBDIR)/lcd_io.c $(LIBDIR)/circbuf8.c $(LIBDIR)/serque.c $(LIBDIR)/i2c_usi.c
+SRC = $(TARGET).c i2c_usi.c
+SRC += $(LIBDIR)/lcd.c $(LIBDIR)/lcd_io.c $(LIBDIR)/circbuf8.c $(LIBDIR)/serque.c
 
 
 # List C++ source files here. (C dependencies are automatically generated.)
@@ -553,5 +553,3 @@ $(shell mkdir $(OBJDIR) 2>/dev/null)
 .PHONY : all begin finish end sizebefore sizeafter gccversion \
 build elf hex eep lss sym coff extcoff \
 clean clean_list program debug gdb-config
-
-
